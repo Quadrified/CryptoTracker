@@ -6,13 +6,13 @@ junit = "4.13.2"
 junitVersion = "1.2.1"
 espressoCore = "3.6.1"
 lifecycleRuntimeKtx = "2.8.6"
-activityCompose = "1.9.2"
-composeBom = "2024.09.02"
+activityCompose = "1.9.3"
+composeBom = "2024.10.00"
 desugar-jdk-libs = "2.1.2"
 ktor = "2.3.12"
 koin = "3.5.6"
 material3-adaptive = "1.0.0"
-compose-material-icons-extended = "1.7.2"
+compose-material-icons-extended = "1.7.4"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
