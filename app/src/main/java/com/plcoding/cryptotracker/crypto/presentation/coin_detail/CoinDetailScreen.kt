@@ -105,7 +105,7 @@ fun CoinDetailScreen(
                         .toDisplayableNumber()
 
                 val isPositive = coin.changePercent24Hr.value > 0.0
-                val contentColor = if (isPositive) {
+                val cardContentColor = if (isPositive) {
                     if (isSystemInDarkTheme()) Color.Green else greenBackground
                 } else {
                     MaterialTheme.colorScheme.error
@@ -119,7 +119,7 @@ fun CoinDetailScreen(
                     } else {
                         ImageVector.vectorResource(R.drawable.trending_down)
                     },
-                    contentColor = contentColor
+                    contentColor = cardContentColor
                 )
             }
         }
