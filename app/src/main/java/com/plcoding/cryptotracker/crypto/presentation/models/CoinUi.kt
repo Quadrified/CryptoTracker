@@ -2,8 +2,8 @@ package com.plcoding.cryptotracker.crypto.presentation.models
 
 import android.icu.text.NumberFormat
 import androidx.annotation.DrawableRes
-import com.plcoding.cryptotracker.crypto.domain.Coin
 import com.plcoding.cryptotracker.core.presentation.util.getDrawableIdForCoin
+import com.plcoding.cryptotracker.crypto.domain.Coin
 import java.util.Locale
 
 data class CoinUi(
@@ -40,10 +40,12 @@ fun Coin.toCoinUi(): CoinUi {
 
 // Extension function to create remaining of CoinUi "DisplayableNumber" items
 fun Double.toDisplayableNumber(): DisplayableNumber {
-    val formatter = NumberFormat.getNumberInstance(Locale.getDefault()).apply {
-        minimumFractionDigits = 2
-        maximumFractionDigits = 2
-    }
+    val formatter = NumberFormat
+        .getNumberInstance(Locale.getDefault())
+        .apply {
+            minimumFractionDigits = 2
+            maximumFractionDigits = 2
+        }
 
     return DisplayableNumber(
         // this => the item we call the "Double.toDisplayableNumber()" on
