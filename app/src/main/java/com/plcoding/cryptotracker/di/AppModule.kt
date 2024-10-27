@@ -20,5 +20,6 @@ val appModule = module {
     // we specify which Repository/Interface this is implementing
     singleOf(::RemoteCoinDataSource).bind<CoinDataSource>()
 
+    // To inject ViewModel where needed (Eg. Navigation)
     viewModelOf(::CoinListViewModel)
 }
