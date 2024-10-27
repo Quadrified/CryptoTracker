@@ -10,3 +10,5 @@
 - [2.4] CoinsListViewModel
   - Initial Data Loading Debate: https://youtu.be/mNKQ9dc1knI?si=D_KrF1alIi2Fepxl
 
+- [2.6] Handling Network Errors
+  - ObserveAsEvents In Detail: https://youtu.be/njchj9d_Lf8?si=YnXMR-ug0qKSSZfA
